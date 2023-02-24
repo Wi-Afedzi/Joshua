@@ -1,0 +1,47 @@
+# Define the available cars and their prices
+cars = {
+    "Toyota": 100000,
+    "Honda": 140000,
+    "Hyundai": 12000,
+    "Nissan": 300000,
+    "Ford": 600000,
+    "Chevrolet": 450000,
+    "Mercedes Benz": 750000,
+    "BMW": 700000, 
+    "GMC": 250000,
+    "Volkswagon": 300000,
+    "Land Rover": 550000,
+    "Tesla": 2000000,
+    "KIA": 130000,
+    "Lexus": 400000,
+    "Audi": 500000,
+    "Dodge": 650000,
+    "Jaguar": 680000,
+    "Ferrari": 5000000,
+    "Porche": 2000000,
+    "Jeep": 590000,
+    "Bugatti": 15000000, 
+    "Chrysler": 6000000,
+    "Mazda": 4300000,
+    "Lincoln": 3000000,
+    "Bentley": 8000000,
+    "Volvo": 1300000,
+    "Cardillac": 2300000,
+    "Pontiac": 2500000,
+    "Infinity": 360000,
+    "Maserati": 4500000,
+    "Aston Martin": 1700000
+    }
+    
+# Ask the user to input a car brand
+car_brand = input("Enter the car brand: ")
+
+# Check if the car is available
+if car_brand in cars:
+    print("Yes")
+    print(f"{car_brand} is available for sale.")
+    print(f"The sales price for {car_brand} is ${cars[car_brand]}.")
+else:
+    #if car name is not present, inform the user
+    print("No")
+    print(f"Sorry {car_brand} is not available for sale.")
